@@ -1,0 +1,84 @@
+body {
+  display: flex;
+  flex-direction: column; 
+  background-color: lightblue;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  margin: 0; 
+animation: color 1s infinite;
+background-size: cover; 
+background-position: center; 
+background-repeat: no-repeat;
+
+}
+
+h1 {
+  animation: colorChange 1s infinite;
+}
+
+div {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: min-content;
+}
+
+button {
+  height: auto; 
+  width: 120px; 
+height: 50px;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 50px;
+  padding: 10px;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+ 
+  position: relative; 
+  gap: 10px; 
+  background: transparent;
+}
+
+
+
+ img { 
+  width: 70px; 
+height: 200px;
+  border: 2px solid black;
+  border-radius: 60px;
+  object-fit:fill; 
+  background: transparent;
+}
+
+.demo {
+  display: block;
+  justify-content: center; 
+  align-items: center; 
+border: 10px black;
+
+}
+#p1,#p2{
+  font-family: 'Times New Roman', Times, serif;
+  font-size:xx-large;
+  height: 50px;
+  font-style: italic;
+  color:gold;
+}
+
+
+@keyframes colorChange {
+  0%   {background-color: red; }
+  25%  {background-color: yellow; }
+  50%  {background-color: blue; }
+  75%  {background-color: green; }
+  100% {background-color: red; }
+}
+@keyframes color {
+  0%{background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU0j2u7-YWGDbStowWBU7zZbkQgHtpQUWg2juRrZexQ0dpb3pp-9jlTXsiGW4btvcK8Sk&usqp=CAU);}
+  25%{background-image: url(https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=pexels-pixabay-531880.jpg&fm=jpg);}
+  50%{background-image: url(https://wallpapers.com/images/hd/raining-background-y85k8r8xf394uxng.jpg);}
+  75%{background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_wLCc4HwNgdmKa30pOZDHsLEqhk4hKGEB5_2wAbAADAYcGGgtD4c1Ciy_OMIL2Sr6Qpo&usqp=CAU);}
+  100%{background-image: url(https://wallup.net/wp-content/uploads/2017/03/28/255027-bubbles-deep_sea-748x468.jpg);}
+}
